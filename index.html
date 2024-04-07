@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Red Hat Display";
+      font-size: 16px;
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+    }
+
+    main {
+      max-width: 400px;
+      max-height: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 hsla(245, 75%, 52%, 0.2), 0 6px 20px 0 hsl(245, 75%, 52%, 0.19);
+      margin: 50px auto;
+    }
+
+    img[alt="illustration-hero"] {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .container {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px 10px 0 0;
+    }
+
+    h1 {
+      margin: 30px 0 15px;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+
+    .container>p {
+      color: hsl(224, 23%, 55%);
+      text-align: center;
+      margin: 0 40px 20px 40px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .plan {
+      min-width: 300px;
+      min-height: 80px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: hsla(225, 100%, 94%, 0.3);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .plan div {
+      margin-left: -50px;
+    }
+
+    .plan div p:nth-child(1) {
+      font-weight: bold;
+    }
+
+    .plan div p:nth-child(2) {
+      opacity: 0.7;
+    }
+
+    .plan a {
+      text-decoration: underline;
+      font-weight: bold;
+      color: hsl(245, 75%, 52%);
+      cursor: pointer;
+    }
+
+    button:nth-child(5) {
+      min-width: 300px;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      color: hsl(225, 100%, 98%);
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 10px;
+      box-shadow: 0 20px 20px 0 hsla(245, 75%, 52%, 0.2), 0 6px 20px 0 hsl(245, 75%, 52%, 0.19);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:nth-child(6) {
+      min-width: 300px;
+      padding: 12px;
+      background: none;
+      border: none;
+      color: hsl(224, 23%, 55%);
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .attribution {
+      position: relative;
+      bottom: -40px;
+    }
+
+    .plan a:hover {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+    }
+
+    button:nth-child(5):hover {
+      background-color: hsl(224, 23%, 55%);
+    }
+
+    button:nth-child(6):hover {
+      color: hsl(223, 47%, 23%);
+      font-weight: bold;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <img src="./images/illustration-hero.svg" alt="illustration-hero">
+
+      <h1>Order Summary</h1>
+
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+
+      <div class="plan">
+        <img src="./images/icon-music.svg" alt="icon-music">
+        <div>
+          <p>Annual Plan</p>
+          <p>$59.99/year</p>
+        </div>
+        <a>Change</a>
+      </div>
+
+      <button>Proceed to Payment</button>
+
+      <button>Cancel Order</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/savchrisostomidhs">savchrisostomidhs</a>.
+    </div>
+  </main>
+</body>
+
+</html>
